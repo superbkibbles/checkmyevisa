@@ -20,15 +20,42 @@
       }
 
       &-name {
-        margin-left: 10px;
+        margin-left: 1.5rem;
       }
     }
   }
 
   &__moon {
     position: absolute;
-    top: -20%;
-    right: -12%;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+
+    //top: -20%;
+    //right: -12%;
+    right: -18rem;
+    top: -15rem;
+
+    background: linear-gradient(53.48deg, #FA45C1 15.94%, #CB389D 20.3%, #571843 29.12%, #000000 37.2%);
+    opacity: 0.5;
+
+  }
+
+  &__plane {
+
+    &-1 {
+      position: absolute;
+
+      bottom: 5rem;
+      left: 5rem;
+    }
+
+    &-2 {
+      position: absolute;
+      bottom: -10rem;
+      right: -10rem;
+      opacity: .25;
+    }
   }
 }
 
