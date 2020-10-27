@@ -1,13 +1,17 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
-import './App.css';
+// import { Route, Switch } from 'react-router-dom'
+
+import WelcomePage from "./pages/WelcomePage";
 
 function App() {
   return (
       <>
-        <Route exact path='/' component={() => <div>hello</div>} />
-        <Route exact path='/some' component={() => <div>Well</div>} />
+          <WelcomePage />
       </>
+      // <Switch>
+      //   <Route exact path='/' component={() => <div>hello</div>} />
+      //   <Route exact path='/some' component={() => <div>Well</div>} />
+      // </Switch>
   );
 }
 

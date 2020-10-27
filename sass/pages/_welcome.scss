@@ -1,0 +1,34 @@
+.welcome {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #270556, #481051);
+  overflow: hidden;
+
+  &__logo {
+    position: relative;
+
+    &__container {
+      position: absolute;
+      top: 40px;
+      left: 15px;
+      display: flex;
+      align-items: center;
+
+      &-image {
+      }
+
+      &-name {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__moon {
+    position: absolute;
+    top: -20%;
+    right: -12%;
+  }
+}
+

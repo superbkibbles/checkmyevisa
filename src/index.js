@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import reduxThunk from 'redux-thunk';
 
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import reduxer from './reducer';
+
+const initState = {};
+const store = createStore(reduxer, initState, applyMiddleware(reduxThunk))
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
-          <App />
+          <Provider store={store}>
+            <App />
+          </Provider>
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
