@@ -13,6 +13,64 @@
   --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
   --line: 1px solid var(--color-grey-light-2); }
 
+.dropdown {
+  width: 40rem; }
+  .dropdown__search {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .dropdown__search__group {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-radius: 1rem 1rem 0 0; }
+    .dropdown__search__input {
+      font-family: inherit;
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+      border-radius: 10rem;
+      width: 90%; }
+      .dropdown__search__input::-webkit-input-placeholder {
+        color: var(--color-grey-dark-3); }
+    .dropdown__search__icon {
+      position: absolute;
+      background-color: transparent;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 4rem;
+      cursor: pointer; }
+  .dropdown-result {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .dropdown-result__list {
+      border-radius: 0 0 1rem 1rem;
+      overflow-y: auto;
+      width: 100%;
+      max-height: 20rem;
+      background-color: var(--color-grey-light-1); }
+      .dropdown-result__list::-webkit-scrollbar-track {
+        border-radius: 1rem; }
+      .dropdown-result__list::-webkit-scrollbar {
+        width: 10px; }
+      .dropdown-result__list::-webkit-scrollbar-thumb {
+        height: 2rem;
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  .dropdown__list {
+    text-align: center; }
+    .dropdown__list__item {
+      padding: 1rem 0;
+      cursor: pointer;
+      font-size: 1.7rem;
+      transition: all .1s; }
+      .dropdown__list__item:hover {
+        background-color: var(--color-grey-light-3); }
+  @media (max-width: 566px) {
+    .dropdown {
+      width: 30rem; } }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -38,6 +96,12 @@ input:focus {
 
 button {
   outline: none; }
+
+input {
+  border: none; }
+
+button {
+  border: none; }
 
 body {
   margin: 0;
@@ -83,7 +147,7 @@ body {
     .welcome__logo__container {
       position: absolute;
       top: 40px;
-      left: 15px;
+      left: 2.5rem;
       display: flex;
       align-items: center; }
       .welcome__logo__container-name {
@@ -102,7 +166,9 @@ body {
     bottom: 5rem;
     left: 5rem; }
   .welcome__plane-2 {
+    pointer-events: none;
     position: absolute;
-    bottom: -10rem;
-    right: -10rem;
-    opacity: .25; }
+    bottom: -15rem;
+    transform: rotateY(45deg);
+    right: -20rem;
+    opacity: .10; }

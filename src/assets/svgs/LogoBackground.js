@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function () {
     return (
-        <svg width="560" height="200" viewBox="0 0 240 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="420" height="200" viewBox="0 0 240 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d)">
-                <path d="M210.303 22.4907C175.612 39.765 184.711 110.014 89.1705 69.7072C-1.82086 22.4907 -3.52695 124.409 -24 22.4907C-24 -13.1265 28.4505 -42 93.1514 -42C157.852 -42 292.195 -18.2879 210.303 22.4907Z" fill="#9F19AB" fill-opacity="0.9"/>
+                <path d="M210.303 22.4907C175.612 39.765 184.711 110.014 89.1705 69.7072C-1.82086 22.4907 -3.52695 124.409 -24 22.4907C-24 -13.1265 28.4505 -42 93.1514 -42C157.852 -42 292.195 -18.2879 210.303 22.4907Z" fill="#9F19AB" fillOpacity="0.9"/>
             </g>
             <defs>
-                <filter id="filter0_d" x="-28" y="-42" width="268" height="132" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d" x="-28" y="-42" width="268" height="132" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                     <feOffset dy="4"/>
                     <feGaussianBlur stdDeviation="2"/>

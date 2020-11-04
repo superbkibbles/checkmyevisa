@@ -4,6 +4,7 @@ import LogoBackground from '../assets/svgs/LogoBackground';
 import LogoName from "../assets/svgs/LogoName";
 import Logo from '../assets/svgs/logo';
 import Plane from '../assets/svgs/Plane';
+import DropDown from "../components/DropDown";
 
 const WelcomePage = () => {
     return (
@@ -12,19 +13,18 @@ const WelcomePage = () => {
                 <LogoBackground />
                 <div className='welcome__logo__container'>
                     <div className='welcome__logo__container-image'>
-                        <Logo width={50} height={45} />
+                        <Logo width={45} height={40} />
                     </div>
                     <div className="welcome__logo__container-name">
                         <LogoName />
                     </div>
                 </div>
             </div>
-            <div className="welcome__moon">
-                {/*<Moon />*/}
-            </div>
+            <div className="welcome__moon" />
 
-            <div className="form" style={{ position: "absolute", top: '50%', left: '50%', transform: 'translateX(-50%)' }}>
-                <div style={{ width: "400px", height: '50px', backgroundColor: "white" }}></div>
+            {/*<div style={{ position: "absolute", top: '35%', left: '50%', transform: 'translateX(-50%)' }}>*/}
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <DropDown placeholder='Type country...' />
             </div>
 
             <div className="welcome__plane-1">
