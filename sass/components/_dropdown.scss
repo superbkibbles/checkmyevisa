@@ -1,5 +1,5 @@
 .dropdown {
-  width: 40rem;
+  width: 50rem;
 
   &__search {
     display: flex;
@@ -19,7 +19,7 @@
     &__input {
       font-family: inherit;
       font-size: 1.6rem;
-      padding: 1rem 2rem;
+      padding: 1.2rem 2rem;
       border-radius: 10rem;
       //margin-right: -3.5rem;
       width: 90%;
@@ -36,10 +36,7 @@
       right: 4rem;
 
       cursor: pointer;
-
     }
-
-
   }
 
   &-result{
@@ -83,6 +80,10 @@
       font-size: 1.7rem;
       transition: all .1s;
 
+      &:active{
+        background-color: transparent;
+      }
+
       &:hover {
         background-color: var(--color-grey-light-3);
         //color: var(--color-grey-light-1);
@@ -92,7 +93,7 @@
 
   @media (max-width: 566px) {
     & {
-      width: 30rem;
+      width: 35rem;
     }
   }
 
