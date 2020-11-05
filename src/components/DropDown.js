@@ -16,13 +16,17 @@ const DropDown = ({
     }
 
     const inputRef = useRef()
+    const groupRef = useRef()
 
     const focusHandler = (e) => {
         if ( window.innerWidth < 565) {
-            const i = inputRef.current
+            const i = inputRef.current;
+            const g = groupRef.current;
+            
             i.style.position = "absolute";
             i.style.top = "0";
             i.style.width = "100vw";
+            g.style.borderRadius = "0"
         }
     }
 
@@ -30,15 +34,18 @@ const DropDown = ({
         if ( window.innerWidth < 566) {
             setTimeout(() => {
                 const i = inputRef.current
+                const g = groupRef.current
+
                 i.style.position = "relative";
                 i.style.width = "35rem";
+                g.style.borderRadius = " 1rem 1rem 0 0";
             }, 1)
         }
     }
     return (
         <form ref={ inputRef } className="dropdown" onSubmit={ handleSubmit }>
             <div className="dropdown__search">
-                <div className="dropdown__search__group" style={{
+                <div ref={ groupRef } className="dropdown__search__group" style={{
                     backgroundColor: filteredCountries.length > 0 ? "#fff": "transparent", borderRadius: "1rem 1rem 0 0"
                 }}
                     onClick={(e) => e.stopPropagation()}
