@@ -22,7 +22,7 @@ const DropDown = ({
         if ( window.innerWidth < 565) {
             const i = inputRef.current;
             const g = groupRef.current;
-            
+
             i.style.position = "absolute";
             i.style.top = "0";
             i.style.width = "100vw";

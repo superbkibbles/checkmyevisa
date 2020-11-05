@@ -46,6 +46,12 @@
       position: absolute;
       bottom: 5rem;
       left: 5rem;
+
+      @media (max-width: 566px) {
+        & {
+          display: none;
+        }
+      }
     }
 
     &-2 {

@@ -72,7 +72,9 @@
         background-color: var(--color-grey-light-3); }
   @media (max-width: 566px) {
     .dropdown {
-      width: 35rem; } }
+      width: 35rem; }
+      .dropdown-result__list {
+        max-height: 100vh; } }
 
 html {
   box-sizing: border-box;
@@ -168,6 +170,9 @@ body {
     position: absolute;
     bottom: 5rem;
     left: 5rem; }
+    @media (max-width: 566px) {
+      .welcome__plane-1 {
+        display: none; } }
   .welcome__plane-2 {
     pointer-events: none;
     position: absolute;
