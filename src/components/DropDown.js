@@ -26,7 +26,12 @@ const DropDown = ({
             i.style.position = "absolute";
             i.style.top = "0";
             i.style.width = "100vw";
-            g.style.borderRadius = "0"
+            g.style.borderRadius = "0";
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
         }
     }
 
