@@ -55,7 +55,6 @@ const Test = () => {
 
                     <div style={{
                         width: "400px",
-                        height: "500px",
                         // wordBreak: "break"
                         display: "flex",
                         textAlign: "center",
