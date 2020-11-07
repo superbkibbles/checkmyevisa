@@ -33,21 +33,21 @@ const Test = () => {
                 </p>
 
             </div>
-            <div style={{
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "center",
-            }}>
+            {/*<div style={{*/}
+            {/*    display: "flex",*/}
+            {/*    justifyContent: "space-around",*/}
+            {/*    alignItems: "center",*/}
+            {/*}}>*/}
                 <div style={{
                     display: "flex",
                     justifyContent: "space-around",
+                    alignItems: "center",
                     width: "100%",
                     flexWrap: "wrap"
                 }}>
                     <img
                         style={{
-                            width: "50%",
-                            height: "50%"
+                            width: "50%"
                         }}
                         src={ Logo }
 
@@ -55,11 +55,11 @@ const Test = () => {
 
                     <div style={{
                         width: "400px",
+                        height: "500px",
                         // wordBreak: "break"
                         display: "flex",
                         textAlign: "center",
                         alignItems: "center",
-
                     }}>
                         <h1 style={{
                             fontSize: "5rem",
@@ -71,7 +71,7 @@ const Test = () => {
                         </h1>
                     </div>
                 </div>
-            </div>
+            {/*</div>*/}
         </div>
     );
 };
