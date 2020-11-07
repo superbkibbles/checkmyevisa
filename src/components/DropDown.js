@@ -15,8 +15,8 @@ const DropDown = ({
         e.preventDefault()
     }
 
-    const inputRef = useRef()
-    const groupRef = useRef()
+    const inputRef = useRef();
+    const groupRef = useRef();
 
     const focusHandler = (e) => {
         if ( window.innerWidth < 565) {
@@ -27,11 +27,6 @@ const DropDown = ({
             i.style.top = "0";
             i.style.width = "100vw";
             g.style.borderRadius = "0";
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: 'smooth'
-            })
         }
     }
 
@@ -49,9 +44,9 @@ const DropDown = ({
     }
     return (
         <form ref={ inputRef } className="dropdown" onSubmit={ handleSubmit }>
-            <div className="dropdown__search">
-                <div ref={ groupRef } className="dropdown__search__group" style={{
-                    backgroundColor: filteredCountries.length > 0 ? "#fff": "transparent", borderRadius: "1rem 1rem 0 0"
+            <div className='dropdown__search'>
+                <div ref={ groupRef } className='dropdown__search__group' style={{
+                    backgroundColor: filteredCountries.length > 0 ? "#fff": 'transparent', borderRadius: '1rem 1rem 0 0'
                 }}
                     onClick={(e) => e.stopPropagation()}
                 >
@@ -65,9 +60,9 @@ const DropDown = ({
                         value={ selectedCountry }
                         onChange={ changeHandler } type="text"
                         placeholder={ placeholder }
-                        className="dropdown__search__input"
+                        className='dropdown__search__input'
                     />
-                    <button className="dropdown__search__icon" onClick={ iconClick }>
+                    <button className='dropdown__search__icon' onClick={ iconClick }>
                         <DropDownIcon />
                     </button>
                 </div>
@@ -75,13 +70,13 @@ const DropDown = ({
             </div>
 
 
-            <div className="dropdown-result">
-                <div className="dropdown-result__list" >
-                    <ul className="dropdown__list">
+            <div className='dropdown-result'>
+                <div className='dropdown-result__list'>
+                    <ul className='dropdown__list'>
                         { filteredCountries.map(country => (
                             <li
                                 key={ country }
-                                className="dropdown__list__item"
+                                className='dropdown__list__item'
                                 onClick={ () => listClick(country) }
                             >{ country }</li>
                         )) }
